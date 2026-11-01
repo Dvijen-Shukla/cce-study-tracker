@@ -11,17 +11,17 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>CCE Prelims Tracker</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="css/app.css">
 
 
-<link rel="stylesheet" href="assets/css/overrides.css">
-<link rel="stylesheet" href="assets/css/ratio-proportion.css">
-<link rel="stylesheet" href="assets/css/m7-work-lab.css">
+<link rel="stylesheet" href="css/overrides.css">
+<link rel="stylesheet" href="css/ratio-proportion.css">
+<link rel="stylesheet" href="css/m7-work-lab.css">
 <!-- Notes "book" styles. Kept inline on purpose: the Download button embeds this exact block in the exported notes file. -->
 <style id="bookcss">
 /* notes full view */
@@ -47,6 +47,7 @@
 
 
 <noscript><p style="padding:24px;text-align:center">આ app ચલાવવા JavaScript ચાલુ કરો.</p></noscript>
+
 
 
 <!-- CCE Tracker — Creator Signature -->
@@ -139,45 +140,53 @@
   </div>
 
 </footer>
-<script defer src="assets/js/28-m2-lcm-hcf-visual.js"></script>
-<script defer src="assets/js/29-m3-percentage-partnership-visual.js"></script>
-<script defer src="assets/js/30-m4-profit-loss-visual.js"></script>
-<script defer src="assets/js/31-question-specific-visual-solutions.js" data-purpose="Question-specific visual worked solutions for LCM/HCF, Percentage + Partnership, and Profit/Loss"></script>
-<script defer src="assets/js/26-m6-ratio-and-proportion.js"></script>
-<script defer src="assets/js/39-m7-chain-work-pipes.js" data-purpose="M7 Chain Rule, Time Work Wages and Pipes Cisterns source bank and visual learning system"></script>
-<script defer src="assets/js/27-m8-time-distance-boat.js"></script>
-<script defer src="assets/js/40-m5-simple-compound-interest.js"></script>
-<script defer src="assets/js/37-m14-mensuration-2d-3d.js"></script>
-<script defer src="assets/js/37-m15-trigonometry.js" data-purpose="M15 Trigonometry detailed notes and source questions"></script>
-<script defer src="assets/js/38-m15-coordinate-geometry.js" data-purpose="M15 Coordinate Geometry detailed notes and source questions"></script>
-<script defer src="assets/js/05-r20-statement-prediction.js"></script>
-<script defer src="assets/js/06-r1-coding-decoding.js"></script>
-<script defer src="assets/js/07-r16-mathematical-operations.js"></script>
-<script defer src="assets/js/08-r7-rank-position.js"></script>
-<script defer src="assets/js/09-r10-missing-character.js"></script>
-<script defer src="assets/js/10-r4-direction-sense.js"></script>
-<script defer src="assets/js/11-r6-venn-diagram.js"></script>
-<script defer src="assets/js/12-r8-number-series.js"></script>
-<script defer src="assets/js/13-r9-r11-verbal-reasoning.js"></script>
-<script defer src="assets/js/14-r3-age-questions.js"></script>
-<script defer src="assets/js/15-r17-mathematical-modeling.js"></script>
-<script defer src="assets/js/16-r18-mathematical-proofs.js"></script>
-<script defer src="assets/js/17-r14-data-sufficiency.js"></script>
-<script defer src="assets/js/18-r19-analytical-ability.js"></script>
-<script defer src="assets/js/34-topics-json-question-bank.js"></script>
-<script defer src="assets/js/35-topics-json-visual-notes.js"></script>
-<script defer src="assets/js/36-topics-json-deep-design-engine.js"></script>
-<script defer src="assets/js/37-r8-arithmetic-progression.js"></script>
-<script defer src="assets/js/19-core-tracker.js"></script>
-<script defer src="assets/js/20-picture-based-logical-questions.js"></script>
-<script defer src="assets/js/21-r15-symmetry.js"></script>
-<script defer src="assets/js/22-probability-lecture-questions.js"></script>
-<script defer src="assets/js/23-topic-addon-repair-v2.js"></script>
-<script defer src="assets/js/24-symmetry-visual-repair-v3.js"></script>
-<script defer src="assets/js/25-probability-extra-question-bank.js"></script>
-<script defer src="assets/js/32-m3-deep-visual-upgrade.js"></script>
-<script defer src="assets/js/33-all-topic-premium-visual-engine.js"></script>
-<script defer src="assets/js/99-boot.js"></script>
+
+
+<!-- Scripts run in this exact order (defer keeps order). Do not reorder: later files patch earlier ones. 99-boot.js must stay last. -->
+<script defer src="js/01-error-banner.js"></script>
+<script defer src="js/02-topic-catalog.js"></script>
+<script defer src="js/03-notes-bank.js"></script>
+<script defer src="js/04-built-in-question-bank.js"></script>
+<script defer src="js/28-m1-number-system-decimals.js"></script>
+<script defer src="js/28-m2-lcm-hcf-visual.js"></script>
+<script defer src="js/29-m3-percentage-partnership-visual.js"></script>
+<script defer src="js/30-m4-profit-loss-visual.js"></script>
+<script defer src="js/31-question-specific-visual-solutions.js" data-purpose="Question-specific visual worked solutions for LCM/HCF, Percentage + Partnership, and Profit/Loss"></script>
+<script defer src="js/26-m6-ratio-and-proportion.js"></script>
+<script defer src="js/39-m7-chain-work-pipes.js" data-purpose="M7 Chain Rule, Time Work Wages and Pipes Cisterns source bank and visual learning system"></script>
+<script defer src="js/27-m8-time-distance-boat.js"></script>
+<script defer src="js/40-m5-simple-compound-interest.js"></script>
+<script defer src="js/37-m14-mensuration-2d-3d.js"></script>
+<script defer src="js/37-m15-trigonometry.js" data-purpose="M15 Trigonometry detailed notes and source questions"></script>
+<script defer src="js/38-m15-coordinate-geometry.js" data-purpose="M15 Coordinate Geometry detailed notes and source questions"></script>
+<script defer src="js/05-r20-statement-prediction.js"></script>
+<script defer src="js/06-r1-coding-decoding.js"></script>
+<script defer src="js/07-r16-mathematical-operations.js"></script>
+<script defer src="js/08-r7-rank-position.js"></script>
+<script defer src="js/09-r10-missing-character.js"></script>
+<script defer src="js/10-r4-direction-sense.js"></script>
+<script defer src="js/11-r6-venn-diagram.js"></script>
+<script defer src="js/12-r8-number-series.js"></script>
+<script defer src="js/13-r9-r11-verbal-reasoning.js"></script>
+<script defer src="js/14-r3-age-questions.js"></script>
+<script defer src="js/15-r17-mathematical-modeling.js"></script>
+<script defer src="js/16-r18-mathematical-proofs.js"></script>
+<script defer src="js/17-r14-data-sufficiency.js"></script>
+<script defer src="js/18-r19-analytical-ability.js"></script>
+<script defer src="js/34-topics-json-question-bank.js"></script>
+<script defer src="js/35-topics-json-visual-notes.js"></script>
+<script defer src="js/36-topics-json-deep-design-engine.js"></script>
+<script defer src="js/37-r8-arithmetic-progression.js"></script>
+<script defer src="js/19-core-tracker.js"></script>
+<script defer src="js/20-picture-based-logical-questions.js"></script>
+<script defer src="js/21-r15-symmetry.js"></script>
+<script defer src="js/22-probability-lecture-questions.js"></script>
+<script defer src="js/23-topic-addon-repair-v2.js"></script>
+<script defer src="js/24-symmetry-visual-repair-v3.js"></script>
+<script defer src="js/25-probability-extra-question-bank.js"></script>
+<script defer src="js/32-m3-deep-visual-upgrade.js"></script>
+<script defer src="js/33-all-topic-premium-visual-engine.js"></script>
+<script defer src="js/99-boot.js"></script>
 <script>if("serviceWorker"in navigator&&(location.protocol==="https:"||location.hostname==="localhost"))addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script>
 
 
