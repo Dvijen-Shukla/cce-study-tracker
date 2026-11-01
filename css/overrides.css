@@ -22,3 +22,28 @@ html{-webkit-text-size-adjust:100%}*{-webkit-tap-highlight-color:transparent}img
 html, body { max-width: 100%; }
 html { overflow-x: hidden; }
 @supports (overflow-x: clip) { html { overflow-x: clip; } }
+
+/* Mobile vertical scrolling fix */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    touch-action: pan-y pinch-zoom;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: auto;
+}
+
+@media (max-width: 640px) {
+    body {
+        position: relative;
+        overflow-y: auto !important;
+        touch-action: pan-y pinch-zoom;
+    }
+
+    main {
+        touch-action: pan-y pinch-zoom;
+        padding-bottom: calc(120px + env(safe-area-inset-bottom));
+    }
+}
