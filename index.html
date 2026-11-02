@@ -143,6 +143,11 @@
 
  <script defer src="assets/js/02-topic-catalog.js"></script> 
   
+<!-- Scripts run in this exact order (defer keeps order). Do not reorder: later files patch earlier ones. 99-boot.js must stay last. -->
+<script defer src="assets/js/01-error-banner.js"></script>
+<script defer src="assets/js/02-topic-catalog.js"></script>
+<script defer src="assets/js/03-notes-bank.js"></script>
+<script defer src="assets/js/04-built-in-question-bank.js"></script>
 <script defer src="assets/js/28-m1-number-system-decimals.js"></script>
 <script defer src="assets/js/28-m2-lcm-hcf-visual.js"></script>
 <script defer src="assets/js/29-m3-percentage-partnership-visual.js"></script>
